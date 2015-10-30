@@ -21,6 +21,7 @@ public static void WildBear(){
 	monster.hp = 17;
 	monster.attack = 17;
 	monster.defense = 12;
+	monster.res = 9;
 	monster.drop = 15;
 	monster.weak = "Fire";
 }
@@ -29,6 +30,7 @@ public static void Floor1Boss(){
 	monster.hp = 15;
 	monster.attack = 11;
 	monster.defense = 10;
+	monster.res=10;
 	monster.drop = 25;
 	monster.weak = "Fire";
 }
