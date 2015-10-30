@@ -1,7 +1,8 @@
 public class status {
 	public static String hero;
-	public static Object[] weapon = new Object[4];
-	public static Object[] armor = new Object[3];
+	public static String weapon;
+	public static String armor;
+	public static Object[] item = new Object[3];
 	public static int level = 1;
 	public static double counter = .02;
 	public static int move = 6;
@@ -21,7 +22,7 @@ public class status {
 	public static int next;
 	status(){
 		System.out.println("Name: " + hero + " level: " + level + " counter " + counter +
-				"\nWeapon: " + weapon[0] + " Armor: " + armor[0] + " move " + move + " Jump " + jump +
+				"\nWeapon: " + weapon + " Armor: " + armor + " item" + item[0] + " move " + move + " Jump " + jump +
 				"\nHP " + damageHp + "/" + hp + " Mp " + usedMp + "/" +mp + " attack " + attack + " defence " + defence +
 				"\nInt " + 9 + " res " + res + " total Exp " + totalExp + " next " + (next - exp));
 	}
