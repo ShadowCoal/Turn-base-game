@@ -42,4 +42,9 @@ static void itemShop(){
 		status.item[y] = item[x][y];
 	}
 }
+static void inn(){
+	status.damageHp = status.hp;
+	status.usedMp = status.mp;
+	System.out.print("All Hp and Mp restore");
+}
 }
