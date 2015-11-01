@@ -1,5 +1,4 @@
 import java.util.Scanner;
-//need to add x == 4 on our turn and game over screen
 public class attack {
 	private static Scanner input;
 	attack(int x){
@@ -11,6 +10,7 @@ public class attack {
 		}
 		else
 			monster.Floor1Boss();
+		System.out.println(monster.name + " showed up ");
 		ourTurn();
 		if (status.weapon != "bow" ||  status.weapon != "staff")
 			theirTurn();
@@ -18,11 +18,11 @@ public class attack {
 			System.out.print(monster.name + " is to far away to attack");
 		while(status.damageHp>1 && monster.hp >1){
 			ourTurn();
-			if(monster.hp > 1)
+			if(monster.hp > 0)
 			theirTurn();
 		}
 		if (status.damageHp<=0){
-			//game over screen
+			new Gameover();
 		}
 		else{
 			System.out.println(monster.name + " ran away");
@@ -44,12 +44,12 @@ public class attack {
 	public static void ourTurn(){
 		input = new Scanner(System.in);
 		System.out.println(status.damageHp + "/" + status.hp + " " + status.usedMp + "/" + status.mp);
-		System.out.print("1- attack ");
+		System.out.println("1- attack ");
 		if(status.weapon == "staff" && status.usedMp >0)
-			System.out.print("2- fire magic (uses 1 mp) ");
+			System.out.println("2- fire magic (uses 1 mp) ");
 		if(status.item[0] != "used")
-			System.out.print("3- item");
-		System.out.print("4- run away");
+			System.out.println("3- item");
+		System.out.println("4- run away");
 		int x = input.nextInt();
 		if(x > 5 || x <0){
 			System.out.println("auto attack");
@@ -97,10 +97,11 @@ public class attack {
 				System.out.print("you know have " + status.usedMp);
 				
 			}
-			
+			status.item[0]="used";
 		}
 		else if (x == 4){
-			
+			Forest.goingBack();
 		}
 	}
+
 }
