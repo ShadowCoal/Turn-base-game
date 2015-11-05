@@ -19,7 +19,7 @@ public class status {
 	public static int res = 8;
 	public static int totalExp;
 	public static int exp;
-	public static int next;
+	public static int next=10;
 	status(){
 		System.out.println("Name: " + hero + " level: " + level + " counter " + counter +
 				"\nWeapon: " + weapon + " Armor: " + armor + " item" + item[0] + " move " + move + " Jump " + jump +
