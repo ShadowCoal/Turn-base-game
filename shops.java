@@ -7,6 +7,7 @@ shops(){
 	itemShop();
 }
 static void weaponShop(){
+	System.out.println("Enter weapon shop");
 	input = new Scanner(System.in);
 	int x = -1;
 	Object[][] weapon = {{"sword", 11,6,0},{"bow",8,0,0},{"staff",0,0,8}};
@@ -20,6 +21,7 @@ static void weaponShop(){
 	status.Int+=(int)weapon[x][3];
 }
 static void armorShop(){
+	System.out.println("Enter armor shop");
 	input = new Scanner(System.in);
 	int x = -1;
 	Object[][] armor = {{"cheep armor",10,0}, {"charm",4,7}};
@@ -32,6 +34,7 @@ static void armorShop(){
 	status.res += (int)armor[x][2];
 }
 static void itemShop(){
+	System.out.println("Enter item shop");
 	input = new Scanner(System.in);
 	int x = -1;
 	Object[][] item = {{"first aid kit",10,0}, {"potion", 0, 5}};
