@@ -33,8 +33,8 @@ public static void WildBear(){
 }
 public static void Floor1Boss(){
 	name = "Dino";
-	monster.hp = 15;
-	monster.attack = 11;
+	monster.hp = 40;
+	monster.attack = 20;
 	monster.defense = 10;
 	monster.res=10;
 	monster.spd = 4;
