@@ -35,11 +35,11 @@ public class attack {
 	public static void theirTurn(){
 		int damage = monster.attack - status.defence;
 		if(damage >0){
-		System.out.print(monster.name + " attacks deals " + damage);
+		System.out.println(monster.name + " attacks deals " + damage);
 		status.damageHp -= damage;
 		}
 		else
-			System.out.print(monster.name + " does no damage ");
+			System.out.println(monster.name + " does no damage ");
 	}
 	public static void ourTurn(){
 		input = new Scanner(System.in);
