@@ -1,3 +1,3 @@
-# Turn-base-game
+
 #Gameplay
-move around in an area and fight enemeies turn base style
+use num to attack, use magic, items, and more as you explore the forest
