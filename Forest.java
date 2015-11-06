@@ -17,6 +17,7 @@ Forest(){input = new Scanner(System.in);
 	}
 	System.out.print("You found the boss");
 	new attack(1);
+	new Gameover();
 	}
 }
 public static void goingBack(){
